@@ -1,0 +1,134 @@
+.body-home {
+  background-image: url('/assets/home/background-home-desktop.jpg');
+}
+.homepage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homepage-content {
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.left-container {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left-container .intro {
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: rgb(212, 206, 206);
+  word-spacing: 4px;
+  letter-spacing: 2px;
+}
+
+.left-container h1 {
+  font-size: 90px;
+  text-transform: uppercase;
+  font-family: "Playfair Display", system-ui;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+
+.left-container .info {
+  color: rgb(212, 206, 206);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+
+.right-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-container .explore-btn {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-family: "Playfair Display", system-ui;
+  transition: all 0.5s ease-in-out;
+}
+
+.right-container .explore-btn:hover {
+  box-shadow: 0px 0px 30px #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .body-home {
+  background-image: url('/assets/home/background-home-tablet.jpg');
+}
+  .homepage-content {
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .left-container {
+    align-items: center;
+    gap: 15px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .left-container .intro {
+    font-size: 18px;
+    word-spacing: 2px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .left-container h1 {
+    font-size: 60px;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 100%;
+
+  }
+
+  .left-container .info {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .right-container {
+    width: 100%;
+  }
+
+  .right-container .explore-btn {
+    height: 150px;
+    width: 150px;
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .body-home {
+  background-image: url('/assets/home/background-home-mobile.jpg');
+}
+  .left-container {
+    width: 300px;
+  }
+}
+
